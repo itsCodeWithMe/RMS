@@ -33,7 +33,18 @@
                     <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
+            <span class="spaningClass" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+
         </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">The Solution</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+
     </header>
 
     <section class="section-1">
@@ -60,7 +71,7 @@
                 </p>
                 <img src="assets/Line 3.png" alt="">
             </div>
-            <div class="sectionUtils22">
+            <div class="sectionUtils22 spacing">
                 <div class="cardsectionUtils2">
                     <img src="assets/automated.png" alt="">
                     <div class="sectionUtils2Sub">
@@ -125,7 +136,7 @@
 
     <section class="section-4">
         <div class="container">
-            <div class="sectionUtils311 extraUtils" style="flex-direction: row-reverse;">
+            <div class="sectionUtils311 extraUtils">
                 <div class="sectionUtils31">
                     <h3>Accelerate Recoveries</h3>
                     <p>We have several years of integration and technical experience, let’s start the onboarding
@@ -157,7 +168,7 @@
                         <h4>Contact</h4>
                         <p>2021 Fillmore Street #1128 <br>San Francisco, CA <br>
                             94115 - 2708</p>
-                        <p>Phone: <a href="#"><b>(415) 890 - 6431</b></a></p>
+                        <p>Phone: <a href="tel:(415) 890 - 6431"><b>(415) 890 - 6431</b></a></p>
                     </div>
                 </div>
             </div>
@@ -182,6 +193,16 @@
 
 
     </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 
 </html>
