@@ -47,7 +47,7 @@
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.3s;
+    transition: 10ms;
 }
 
 .sidenav a:hover {
@@ -350,6 +350,7 @@
 .footerUtils1 {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .footerUtils1 h4 {
